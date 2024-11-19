@@ -1,5 +1,5 @@
-import React, { PureComponent, Fragment } from 'react'
 import PropTypes from 'prop-types'
+import React, { Fragment, PureComponent } from 'react'
 import { ReactLiquidConfigProvider } from './ReactLiquidConfig'
 
 /**
@@ -76,7 +76,7 @@ class ReactLiquid extends PureComponent {
         const { html, render } = this.props
 
         if (html) {
-            return <div dangerouslySetInnerHTML={this._createHtmlRender()} />
+            return <InnerHtml html={this._createHtmlRender()} />
         }
 
         if (render) {
