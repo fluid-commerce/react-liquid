@@ -4,7 +4,7 @@
     "description": "Liquid templating language component for React",
     "author": "Aquib Master",
     "license": "MIT",
-    "repository": "https://github.com/fluid-commerce/react-liquid.git",
+    "repository": "https://github.com/@fluid-commerce/react-liquid.git",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
     "jsnext:main": "dist/index.es.js",
