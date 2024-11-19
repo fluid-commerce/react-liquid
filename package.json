@@ -1,10 +1,10 @@
 {
-    "name": "react-liquid",
+    "name": "@fluid-commerce/react-liquid",
     "version": "2.0.1",
     "description": "Liquid templating language component for React",
     "author": "Aquib Master",
     "license": "MIT",
-    "repository": "aquibm/react-liquid",
+    "repository": "https://github.com/fluid-commerce/react-liquid.git",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
     "jsnext:main": "dist/index.es.js",
@@ -54,5 +54,8 @@
     ],
     "dependencies": {
         "liquidjs": "^6.0.0"
+    },
+    "publishConfig": {
+        "@fluid-commerce:registry": "https://npm.pkg.github.com"
     }
 }

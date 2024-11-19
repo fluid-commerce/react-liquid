@@ -1,0 +1,19 @@
+name: merge into master
+
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  publish:
+    name: publish package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: create npmrc
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
+          echo "@fluid-commerce:registry=https://npm.pkg.github.com" >> .npmrc
+      - name: Publish packages
+        run: |
+          npm publish
